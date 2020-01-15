@@ -1,6 +1,6 @@
 <template>
   <main id="app">
-    <Search />
+    <Search @submitQuery="submitQuery"/>
     <ImgContainer />
   </main>
 </template>
