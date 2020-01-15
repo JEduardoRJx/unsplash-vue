@@ -17,7 +17,7 @@
       </form>
     </div>
     <div>
-      <h1>searchTerm Here</h1>
+      <h1>{{searchTerm}}</h1>
     </div>
   </section>
 </template>
