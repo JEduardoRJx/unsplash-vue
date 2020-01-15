@@ -56,4 +56,9 @@ export default {
   button:hover {
     cursor: pointer;
   }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 </style>
