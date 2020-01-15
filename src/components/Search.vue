@@ -19,7 +19,12 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      randomImage: '',
+      searchTerm: ''
+    }
+  },
 }
 </script>
 
