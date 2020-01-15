@@ -61,4 +61,13 @@ export default {
     max-width: 100%;
     max-height: 100%;
   }
+
+  input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.75em;
+    padding: 1% 3%;
+  }
 </style>
