@@ -1,10 +1,14 @@
 <template>
   <section v-if="imageSet1.length">
     <div>
-      <ImgCard  v-for="image of imageSet1" v-bind:key="image.id" :image="image" />
+      <ImgCard  v-for="image of imageSet1"
+        v-bind:key="image.id" 
+        :image="image" />
     </div>
     <div>
-      <ImgCard  v-for="image of imageSet2" v-bind:key="image.id" :image="image" />
+      <ImgCard  v-for="image of imageSet2"
+        v-bind:key="image.id" 
+        :image="image" />
     </div>
   </section>
 </template>
