@@ -8,6 +8,8 @@
 <script>
 import Search from './components/Search'
 import ImgContainer from './components/ImgContainer';
+import { searchImages } from './apiCalls';
+
 
 
 export default {
