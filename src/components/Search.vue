@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class='search-section'>
     <div>
       <form>
         <button>
@@ -27,6 +27,17 @@ export default {
       searchTerm: ''
     }
   },
+  async mounted() {
+    const image = await this.getRandomPhoto();
+    this.randomImage = image;
+    document.getElementsByClassName('search-section')[0].style.backgroundImage = `url(${this.randomImage})`
+  },
+  methods: {
+    async getRandomPhoto() {
+      const response = await randomPhoto();
+      return response.urls.regular;
+    },
+  }
 }
 </script>
 
@@ -35,6 +46,12 @@ export default {
     height: 10vh;
     background-color: black;
     display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   div {
