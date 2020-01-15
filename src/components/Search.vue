@@ -45,4 +45,11 @@ export default {
     overflow: hidden;
     display: flex;
   }
+
+  button {
+    height: 100%;
+    width: 50px;
+    border: none;
+    padding: 10px;
+  }
 </style>
