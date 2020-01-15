@@ -33,4 +33,11 @@ export default {
     display: flex;
     overflow: scroll;
   }
+
+  div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 </style>
