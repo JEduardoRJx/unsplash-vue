@@ -29,4 +29,12 @@ export default {
     background-color: black;
     display: flex;
   }
+
+  form {
+    height: 50px;
+    width: 80%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+  }
 </style>
