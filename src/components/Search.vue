@@ -5,7 +5,9 @@
         <button>
           <img src='../assets/search.svg'/>
         </button>
-        <input />
+        <input placeholder="Search photos" 
+          type="text"
+          @input="setSearchTerm"/>
         <button>
           <img src='../assets/clear.svg'/>
         </button>
@@ -36,6 +38,10 @@ export default {
     async getRandomPhoto() {
       const response = await randomPhoto();
       return response.urls.regular;
+    },
+    setSearchTerm() {
+      let searchTerm = event.target.value;
+      this.searchTerm = searchTerm;
     },
   }
 }
