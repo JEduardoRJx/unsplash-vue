@@ -9,7 +9,7 @@
 <script>
 import Search from './components/Search'
 import ImgContainer from './components/ImgContainer';
-import { searchImages } from './apiCalls';
+import { searchImages, getInitialPhotos } from './apiCalls';
 
 
 
@@ -24,6 +24,34 @@ export default {
       imageSet1: [],
       imageSet2: []
     }
+  },
+  async mounted() {
+    // eslint-disable-next-line no-console
+    console.log('hey')
+    this.imageSet1 = [];
+    this.imageSet2 = [];
+    const response = await getInitialPhotos();
+    response.forEach((img, index) => {
+        if (index % 2) {
+          this.imageSet2.push({
+            color: img.color, 
+            raw: img.urls.raw,
+            regular: img.urls.regular, 
+            id: img.id, 
+            width: img.width, 
+            height: img.height
+          })
+        } else {
+          this.imageSet1.push({
+            color: img.color, 
+            raw: img.urls.raw,
+            regular: img.urls.regular, 
+            id: img.id, 
+            width: img.width, 
+            height: img.height
+          })
+        }
+      })
   },
   methods: {
     async submitQuery(query) {
