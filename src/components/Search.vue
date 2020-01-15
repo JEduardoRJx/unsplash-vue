@@ -1,7 +1,7 @@
 <template>
-  <main id="app">
+  <section>
 
-  </main>
+  </section>
 </template>
 
 <script>

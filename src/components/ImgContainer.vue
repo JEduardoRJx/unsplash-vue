@@ -1,7 +1,7 @@
 <template>
-  <main id="app">
+  <section class='img-container'>
 
-  </main>
+  </section>
 </template>
 
 <script>

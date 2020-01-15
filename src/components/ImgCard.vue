@@ -1,7 +1,7 @@
 <template>
-  <main id="app">
-
-  </main>
+  <a>
+    
+  </a>
 </template>
 
 <script>
