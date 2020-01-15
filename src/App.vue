@@ -15,7 +15,13 @@ export default {
   components: {
     Search,
     ImgContainer,
-  }
+  },
+  data() {
+    return {
+      imageSet1: [],
+      imageSet2: []
+    }
+  },
 }
 </script>
 
