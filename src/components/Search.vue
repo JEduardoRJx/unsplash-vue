@@ -1,8 +1,8 @@
 <template>
   <section class='search-section'>
     <div>
-      <form>
-        <button>
+      <form v-on:submit.prevent="onSubmit">
+        <button v-on:click="onSubmit" type='button'>
           <img src='../assets/search.svg'/>
         </button>
         <input placeholder="Search photos" 
@@ -23,6 +23,9 @@
 import { randomPhoto } from '../apiCalls';
 
 export default {
+  props: {
+    method: { submitQuery: Function}
+  },
   data() {
     return {
       randomImage: '',
@@ -42,6 +45,9 @@ export default {
     setSearchTerm() {
       let searchTerm = event.target.value;
       this.searchTerm = searchTerm;
+    },
+    onSubmit() {
+      this.$emit('submitQuery', this.searchTerm)
     },
   }
 }
