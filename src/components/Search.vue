@@ -30,6 +30,14 @@ export default {
     display: flex;
   }
 
+  div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   form {
     height: 50px;
     width: 80%;
