@@ -8,7 +8,9 @@
 
 <script>
 export default {
-  
+  props: {
+    image: Object
+  }
 }
 </script>
 
