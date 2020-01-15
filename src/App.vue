@@ -1,7 +1,8 @@
 <template>
   <main id="app">
-    <Search @submitQuery="submitQuery"/>
-    <ImgContainer />
+    <Search @submitQuery="submitQuery" />
+    <ImgContainer :imageSet1="imageSet1" 
+      :imageSet2="imageSet2" />
   </main>
 </template>
 
