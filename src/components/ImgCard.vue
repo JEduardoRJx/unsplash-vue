@@ -15,5 +15,10 @@ export default {
 </script>
 
 <style scoped>
-
+  a {
+    margin: 10px;
+  }
+  img {
+    max-width: 100%;
+  }
 </style>
