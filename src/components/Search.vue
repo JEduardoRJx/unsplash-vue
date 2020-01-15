@@ -52,4 +52,8 @@ export default {
     border: none;
     padding: 10px;
   }
+
+  button:hover {
+    cursor: pointer;
+  }
 </style>
