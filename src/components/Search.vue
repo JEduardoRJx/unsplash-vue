@@ -2,13 +2,16 @@
   <section class='search-section'>
     <div>
       <form v-on:submit.prevent="onSubmit">
-        <button v-on:click="onSubmit" type='button'>
+        <button type='button'
+          v-on:click="onSubmit">
           <img src='../assets/search.svg'/>
         </button>
         <input placeholder="Search photos" 
           type="text"
           @input="setSearchTerm"/>
-        <button>
+        <button type='button' 
+          v-on:click="clearText" 
+          v-if="this.searchTerm.length" >
           <img src='../assets/clear.svg'/>
         </button>
       </form>
@@ -49,6 +52,10 @@ export default {
     onSubmit() {
       this.$emit('submitQuery', this.searchTerm)
     },
+    clearText() {
+      this.searchTerm = '';
+      document.querySelector('input').value = '';
+    }
   }
 }
 </script>
