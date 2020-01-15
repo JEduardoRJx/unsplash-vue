@@ -70,4 +70,9 @@ export default {
     font-size: 1.75em;
     padding: 1% 3%;
   }
+
+  h1 {
+    font-size: 3em;
+    color: white;
+  }
 </style>
