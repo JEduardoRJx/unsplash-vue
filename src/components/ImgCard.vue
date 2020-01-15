@@ -1,6 +1,8 @@
 <template>
-  <a>
-    
+  <a :href='image.raw' 
+    target="_blank" 
+    rel="noopener noreferrer">
+    <img :src='image.regular' />
   </a>
 </template>
 
