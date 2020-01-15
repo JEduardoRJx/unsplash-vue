@@ -17,3 +17,11 @@ export const searchImages = async (query) => {
   }
   return response.json();
 }
+
+export const getInitialPhotos = async () => {
+  const response = await fetch(`https://api.unsplash.com/photos?client_id=${accKey2}`)
+  if(!response.ok) {
+    throw Error ("Can't get initial photos");
+  }
+  return response.json();
+}
