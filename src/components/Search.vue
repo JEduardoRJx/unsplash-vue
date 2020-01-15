@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import { randomPhoto } from '../apiCalls';
+
 export default {
   data() {
     return {
