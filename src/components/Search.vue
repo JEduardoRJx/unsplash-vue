@@ -3,11 +3,11 @@
     <div>
       <form>
         <button>
-          <img />
+          <img src='../assets/search.svg'/>
         </button>
         <input />
         <button>
-          <img />
+          <img src='../assets/clear.svg'/>
         </button>
       </form>
     </div>
